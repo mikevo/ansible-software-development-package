@@ -1,2 +1,3 @@
 ---
 # vars file for software_development_package
+rpmfusion_nonfree: no
