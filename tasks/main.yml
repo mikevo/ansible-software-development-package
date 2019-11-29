@@ -1,0 +1,35 @@
+---
+# tasks file for software_development_package
+- name: inlcude OS dependant variables
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution }}-{{ ansible_distribution_major_version}}.yml"
+    - "{{ ansible_distribution }}.yml"
+    - "{{ ansible_os_family }}.yml"
+
+- name: ensure developing software packages are installed
+  package:
+    pkg: "{{ development_package_software_packages }}"
+    state: present
+  tags:
+    - software
+    - install
+
+- name: ensure developing software python packages are installed
+  pip:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ development_package_software_python_packages }}"
+  tags:
+    - software
+    - install
+
+- name: ensure developing software npm packages are installed
+  npm:
+    name: "{{ item }}"
+    state: present
+    global: yes
+  loop: "{{ development_package_software_npm_packages }}"
+  tags:
+    - software
+    - install

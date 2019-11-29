@@ -1,0 +1,38 @@
+development_package_software_packages:
+  - "@C Development Tools and Libraries"
+  - "@Development Libraries"
+  - "@Development tools"
+  - ansible
+  - docker
+  - docker-compose
+  - flatpak-selinux
+  - fzf
+  - gitg
+  - gitflow
+  - git-extras
+  - golang
+  - httpie
+  - libxcrypt-compat
+  - lxc
+  - lxc-templates
+  - meld
+  - neovim
+  - nmap
+  - nodejs
+  - npm
+  - podman
+  - podman-compose
+  - postgresql
+  - postgresql-devel
+  - pylint
+  - python3-cookiecutter
+  - python3-pylint
+  - python3-devel
+  - python3-tkinter
+  - rpm-build
+  - rpm-sign
+  - sqlite-devel
+  - the_silver_searcher
+  - vagrant
+  - wavemon
+  - wireshark

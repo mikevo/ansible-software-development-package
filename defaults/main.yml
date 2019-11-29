@@ -1,0 +1,12 @@
+---
+# defaults file for software_development_package
+development_package_software_packages: []
+
+development_package_software_python_packages:
+  - jsbeautifier
+  - neovim
+  - pipenv
+  - yapf
+
+development_package_software_npm_packages:
+  - prettier

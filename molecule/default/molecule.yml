@@ -1,0 +1,22 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: fedora30
+    image: "geerlingguy/docker-fedora30-ansible:latest"
+    pre_build_image: true
+  - name: fedora31
+    image: "geerlingguy/docker-fedora31-ansible:latest"
+    pre_build_image: true
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+verifier:
+  name: testinfra
+  lint:
+    name: flake8
