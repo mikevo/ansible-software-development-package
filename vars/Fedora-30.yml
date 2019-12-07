@@ -3,6 +3,7 @@ development_package_software_packages:
   - "@Development Libraries"
   - "@Development tools"
   - ansible
+  - bat
   - docker
   - docker-compose
   - eclipse-jdt
@@ -20,6 +21,7 @@ development_package_software_packages:
   - neovim
   - nmap
   - nodejs
+  - nodejs-yarn
   - npm
   - podman
   - postgresql
