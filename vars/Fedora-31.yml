@@ -1,7 +1,8 @@
 development_package_software_packages:
-  - "@C Development Tools and Libraries"
-  - "@Development Libraries"
-  - "@Development tools"
+  - "@c-development"
+  - "@container-management"
+  - "@development-tools"
+  - "@security-lab"
   - ansible
   - bat
   - docker
