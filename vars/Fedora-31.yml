@@ -7,6 +7,10 @@ development_package_software_packages:
   - bat
   - docker
   - docker-compose
+  - eclipse-cdt
+  - eclipse-egit
+  - eclipse-jdt
+  - eclipse-mpc
   - flatpak-selinux
   - fzf
   - gitg
