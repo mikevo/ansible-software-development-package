@@ -12,6 +12,7 @@ development_package_software_packages:
   - eclipse-jdt
   - eclipse-mpc
   - flatpak-selinux
+  - freetype-devel
   - fzf
   - gitg
   - gitflow
