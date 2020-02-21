@@ -6,6 +6,7 @@ development_package_software_python_packages:
   - jsbeautifier
   - neovim
   - pipenv
+  - pre-commit
   - yapf
 
 development_package_software_npm_packages:

@@ -43,3 +43,4 @@ development_package_software_packages:
   - vagrant
   - wavemon
   - wireshark
+  - yamllint
