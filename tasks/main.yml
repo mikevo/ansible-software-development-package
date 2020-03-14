@@ -41,3 +41,9 @@
   tags:
     - software
     - install
+
+- name: install flatpak software
+  include_tasks: "tasks/flatpak.yml"
+  tags:
+    - software
+    - install

@@ -1,0 +1,18 @@
+---
+- name: Add the flathub flatpak remote to the system installation
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+
+- name: Install DBeaver
+  flatpak:
+    name: io.dbeaver.DBeaverCommunity
+    state: present
+    remote: flathub
+
+- name: Install IntelliJ IDEA Community
+  flatpak:
+    name: com.jetbrains.IntelliJ-IDEA-Community
+    state: present
+    remote: flathub
