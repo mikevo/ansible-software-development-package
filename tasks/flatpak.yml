@@ -1,4 +1,14 @@
 ---
+- name: ensure flatpak software packages are installed
+  package:
+    pkg: "{{ item }}"
+    state: present
+  loop:
+    - flatpak
+    - flatpak-selinux
+  tags:
+    - software
+    - install
 - name: Add the flathub flatpak remote to the system installation
   flatpak_remote:
     name: flathub

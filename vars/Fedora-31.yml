@@ -11,7 +11,6 @@ development_package_software_packages:
   - eclipse-egit
   - eclipse-jdt
   - eclipse-mpc
-  - flatpak-selinux
   - freetype-devel
   - fzf
   - gitg
@@ -28,6 +27,9 @@ development_package_software_packages:
   - nodejs
   - nodejs-yarn
   - npm
+  - java-latest-openjdk
+  - java-latest-openjdk-devel
+  - java-latest-openjdk-headless
   - podman
   - podman-compose
   - postgresql
