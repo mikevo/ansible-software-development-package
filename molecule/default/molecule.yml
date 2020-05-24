@@ -8,6 +8,9 @@ platforms:
   - name: fedora31
     image: "geerlingguy/docker-fedora31-ansible:latest"
     pre_build_image: true
+  - name: fedora32
+    image: "geerlingguy/docker-fedora32-ansible:latest"
+    pre_build_image: true
 provisioner:
   name: ansible
   lint:
