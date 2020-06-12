@@ -17,6 +17,7 @@ development_package_software_packages:
   - git-extras
   - golang
   - httpie
+  - kompose
   - libxcrypt-compat
   - lxc
   - lxc-templates
