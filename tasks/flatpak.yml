@@ -20,9 +20,3 @@
     name: io.dbeaver.DBeaverCommunity
     state: present
     remote: flathub
-
-- name: Install IntelliJ IDEA Community
-  flatpak:
-    name: com.jetbrains.IntelliJ-IDEA-Community
-    state: present
-    remote: flathub
