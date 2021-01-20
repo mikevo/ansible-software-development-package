@@ -5,6 +5,7 @@ development_package_software_packages:
   - "@security-lab"
   - ansible
   - bat
+  - code
   - docker
   - docker-compose
   - freetype-devel
