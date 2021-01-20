@@ -5,8 +5,8 @@ driver:
   name: podman
 lint: 'yamllint'
 platforms:
-  - name: fedora32
-    image: "geerlingguy/docker-fedora32-ansible:latest"
+  - name: fedora33
+    image: "geerlingguy/docker-fedora33-ansible:latest"
     pre_build_image: true
 provisioner:
   name: ansible

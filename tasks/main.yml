@@ -7,13 +7,6 @@
     - "{{ ansible_distribution }}.yml"
     - "{{ ansible_os_family }}.yml"
 
-- name: ensure eclipse module is enabled
-  command: "dnf module enable eclipse:latest -y"
-  args:
-    warn: false
-  when:
-    - ansible_distribution == "Fedora"
-
 - name: ensure developing software packages are installed
   package:
     pkg: "{{ development_package_software_packages }}"
