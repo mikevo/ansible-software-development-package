@@ -16,3 +16,4 @@ development_package_software_python_packages:
 development_package_software_npm_packages:
   - add-gitignore
   - prettier
+  - '@angular/cli'
