@@ -1,6 +1,7 @@
 ---
 # defaults file for software_development_package
 software_development_package_flatpak_software: false
+software_development_package_snap_software: false
 
 development_package_software_packages: []
 

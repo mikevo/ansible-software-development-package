@@ -46,3 +46,10 @@
   tags:
     - software
     - install
+
+- name: install snap software
+  include_tasks: "tasks/snap.yml"
+  when: software_development_package_snap_software
+  tags:
+    - software
+    - install

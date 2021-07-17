@@ -15,4 +15,4 @@ galaxy_info:
   galaxy_tags: []
 
 dependencies:
-  - robertdebock.rpmfusion
+  - { role: robertdebock.rpmfusion, when: "ansible_facts['distribution'] == 'Fedora'" }

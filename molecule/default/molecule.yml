@@ -3,16 +3,14 @@ dependency:
   name: galaxy
 driver:
   name: podman
-lint: 'yamllint'
 platforms:
   - name: fedora33
     image: "geerlingguy/docker-fedora33-ansible:latest"
     pre_build_image: true
+  - name: fedora34
+    image: "geerlingguy/docker-fedora34-ansible:latest"
+    pre_build_image: true
 provisioner:
   name: ansible
-  lint:
-    name: ansible-lint
 verifier:
-  name: testinfra
-  lint:
-    name: flake8
+  name: ansible

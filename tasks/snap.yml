@@ -1,0 +1,4 @@
+---
+- name: install DBeaver
+  community.general.snap:
+    name: dbeaver-ce
