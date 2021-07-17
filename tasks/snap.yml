@@ -1,4 +1,13 @@
 ---
+- name: enable classic snap support
+  ansible.builtin.file:
+    src: /var/lib/snapd/snap
+    dest: /snap
+    owner: root
+    group: root
+    state: link
+  when: "ansible_facts['distribution'] == 'Fedora'"
+
 - name: install DBeaver
   community.general.snap:
     name: dbeaver-ce
