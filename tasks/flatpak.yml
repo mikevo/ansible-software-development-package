@@ -1,6 +1,6 @@
 ---
 - name: ensure flatpak software packages are installed
-  package:
+  ansible.builtin.package:
     pkg: "{{ item }}"
     state: present
   loop:
@@ -10,7 +10,7 @@
     - software
     - install
 - name: Add the flathub flatpak remote to the system installation
-  flatpak_remote:
+  ansible.builtin.flatpak_remote:
     name: flathub
     state: present
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo

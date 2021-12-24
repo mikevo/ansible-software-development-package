@@ -1,20 +1,20 @@
 ---
 # tasks file for software_development_package
 - name: inlcude OS dependant variables
-  include_vars: "{{ item }}"
+  ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - "{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
     - "{{ ansible_distribution }}.yml"
     - "{{ ansible_os_family }}.yml"
 
 - name: install vscode repo
-  include_tasks: "tasks/vscode-repo.yml"
+  ansible.builtin.include_tasks: "tasks/vscode-repo.yml"
   tags:
     - software
     - install
 
 - name: ensure developing software packages are installed
-  package:
+  ansible.builtin.package:
     pkg: "{{ development_package_software_packages }}"
     state: present
   tags:
@@ -22,18 +22,18 @@
     - install
 
 - name: ensure developing software python packages are installed
-  pip:
+  ansible.builtin.pip:
     name: "{{ item }}"
-    state: latest
+    state: present
   loop: "{{ development_package_software_python_packages }}"
   tags:
     - software
     - install
 
 - name: ensure developing software npm packages are installed
-  npm:
+  ansible.builtin.npm:
     name: "{{ item }}"
-    state: latest
+    state: present
     global: yes
   loop: "{{ development_package_software_npm_packages }}"
   tags:
@@ -41,14 +41,14 @@
     - install
 
 - name: install flatpak software
-  include_tasks: "tasks/flatpak.yml"
+  ansible.builtin.include_tasks: "tasks/flatpak.yml"
   when: software_development_package_flatpak_software
   tags:
     - software
     - install
 
 - name: install snap software
-  include_tasks: "tasks/snap.yml"
+  ansible.builtin.include_tasks: "tasks/snap.yml"
   when: software_development_package_snap_software
   tags:
     - software

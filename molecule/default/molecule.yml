@@ -7,7 +7,11 @@ platforms:
   - name: development-fedora34
     image: "geerlingguy/docker-fedora34-ansible:latest"
     pre_build_image: true
-provisioner:
-  name: ansible
-verifier:
-  name: ansible
+  - name: development-fedora35
+    image: "fedora:35"
+    pre_build_image: true
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+  flake8

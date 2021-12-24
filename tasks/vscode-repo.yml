@@ -1,10 +1,10 @@
 ---
 - name: import Microsoft key
-  rpm_key:
+  ansible.builtin.rpm_key:
     state: present
     key: "https://packages.microsoft.com/keys/microsoft.asc"
 - name: copy VS Code repo config
-  copy:
+  ansible.builtin.copy:
     src: vscode.repo
     dest: /etc/yum.repos.d/vscode.repo
     owner: root
