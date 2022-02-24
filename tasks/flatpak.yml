@@ -5,7 +5,6 @@
     state: present
   loop:
     - flatpak
-    - flatpak-selinux
   tags:
     - software
     - install

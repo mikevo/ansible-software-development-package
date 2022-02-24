@@ -1,6 +1,11 @@
 ---
 - name: Converge
   hosts: all
+
+  vars:
+    software_development_package_flatpak_software: true
+    software_development_package_snap_software: false
+
   tasks:
     - name: "Include software-development-package"
       include_role:

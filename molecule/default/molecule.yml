@@ -4,11 +4,20 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: development-fedora34
-    image: "geerlingguy/docker-fedora34-ansible:latest"
-    pre_build_image: true
   - name: development-fedora35
     image: "fedora:35"
+    pre_build_image: true
+  - name: development-debian11
+    image: "debian:11"
+    pre_build_image: true
+  - name: development-debian-testing
+    image: "debian:testing"
+    pre_build_image: true
+  - name: development-ubuntu2004
+    image: "ubuntu:20.04"
+    pre_build_image: true
+  - name: development-ubuntu2204
+    image: "ubuntu:22.04"
     pre_build_image: true
 lint: |
   set -e
