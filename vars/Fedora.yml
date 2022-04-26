@@ -16,13 +16,19 @@ development_package_software_packages:
   - gnome-pomodoro
   - golang
   - httpie
+  - java-17-openjdk
+  - java-17-openjdk-devel
+  - java-17-openjdk-headless
+  - java-17-openjdk-javadoc
   - java-latest-openjdk
   - java-latest-openjdk-devel
   - java-latest-openjdk-headless
+  - java-latest-openjdk-javadoc
   - kompose
   - libxcrypt-compat
   - lxc
   - lxc-templates
+  - maven
   - meld
   - neovim
   - nmap
@@ -42,6 +48,7 @@ development_package_software_packages:
   - ranger
   - rpm-build
   - rpm-sign
+  - subversion-javahl
   - sqlite-devel
   - the_silver_searcher
   - vagrant

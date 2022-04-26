@@ -32,13 +32,19 @@ development_package_software_packages:
   - default-jre
   - default-jdk
   - default-jdk-headless 
+  - libsvn-java
   - lxc
   - lxc-templates
+  - maven
   - meld
   - neovim
   - nmap
   - nodejs
   - npm
+  - openjdk-17-doc
+  - openjdk-17-jre
+  - openjdk-17-jdk
+  - openjdk-17-jdk-headless
   - pandoc
   - postgresql
   - pylint
