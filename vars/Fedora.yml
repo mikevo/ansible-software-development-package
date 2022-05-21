@@ -48,6 +48,7 @@ development_package_software_packages:
   - ranger
   - rpm-build
   - rpm-sign
+  - subversion-gnome
   - subversion-javahl
   - sqlite-devel
   - the_silver_searcher
