@@ -7,6 +7,10 @@ software_development_package_snap_packages:
   - name: dbeaver-ce
   - name: intellij-idea-community
     classic: yes
+  - name: pycharm-community
+    classic: yes
+  - name: webstorm
+    classic: yes
 
 software_development_package_flatpak_packages: []
 
