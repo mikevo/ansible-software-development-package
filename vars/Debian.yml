@@ -55,6 +55,7 @@ development_package_software_packages:
   - python3-tk
   - ranger
   - sqlite3
+  - libsqlite3-dev
   - silversearcher-ag
   - vagrant
   - wavemon
