@@ -59,6 +59,7 @@ development_package_software_packages:
   - libsqlite3-dev
   - silversearcher-ag
   - vagrant
+  - virtualbox
   - wavemon
   - wireshark
   - yamllint
