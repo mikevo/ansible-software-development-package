@@ -35,6 +35,7 @@ development_package_software_packages:
   - libsvn-java
   - lxc
   - lxc-templates
+  - mariadb-client
   - maven
   - meld
   - neovim
