@@ -1,23 +1,18 @@
 ---
 dependency:
   name: galaxy
+  options:
+    force: false
 driver:
   name: docker
 platforms:
-  - name: development-fedora36
-    image: "fedora:36"
+  - name: development-fedora37
+    image: "fedora:37"
     pre_build_image: true
   - name: development-debian11
     image: "debian:11"
     pre_build_image: true
-  - name: development-debian-testing
-    image: "debian:testing"
-    pre_build_image: true
   - name: development-ubuntu2204
     image: "ubuntu:22.04"
     pre_build_image: true
-lint: |
-  set -e
-  yamllint .
-  ansible-lint
-  flake8
+role_name_check: 1
