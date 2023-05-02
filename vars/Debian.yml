@@ -11,6 +11,7 @@ development_package_software_packages:
   - pkgconf
   - strace
   - git
+  - git-lfs
   - patch
   - systemtap
   - subversion
